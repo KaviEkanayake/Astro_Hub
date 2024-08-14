@@ -1,0 +1,63 @@
+body{
+    background-image: linear-gradient(rgb(28, 28, 104),rgb(159, 109, 117)),url(./images/bg3.jpeg);
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+
+    
+    
+    
+}
+.container{
+    padding-left: 4%;
+    padding-right: 2%;
+    height: 100%;
+    padding-top: 100px;
+    text-align: center;
+}
+
+/* <!-- ......................Page_topic........................................................................................................... --> */
+h1{
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(199, 199, 127);
+    font-size: 50px;
+    margin-left: 150px;
+    margin-bottom:50px;
+}
+#svg g{
+    
+    padding-left: 2%;
+    padding-right: 2%; 
+    margin-bottom: 80px;
+    width: 70%;
+    float:center;
+}
+#svg g:hover g text,
+#svg g:hover g text{
+    color:black;
+    font-weight:bolder;
+}
+
+#svg g:hover polygon,
+#svg g:hover rect,
+#svg g:focus polygon,
+#svg g:focus rect{
+    fill:rgb(199, 199, 95);
+    opacity: 0.5;
+    stroke: black;
+    stroke-width: 3;
+    cursor: pointer;
+}
+.footer {
+    text-align: center;
+    overflow: hidden;
+    background-color: transparent;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+  }

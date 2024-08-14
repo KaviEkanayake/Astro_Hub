@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+   <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" type="text/css" href="gallery.css">
+    <link rel="stylesheet" type="text/css" href="C:\Users\Pooja Malagala\Downloads\lightbox2-dev\lightbox2-dev\dist\css\lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="navigation.css">
+    <script type="text/javascript" src="C:\Users\Pooja Malagala\Downloads\lightbox2-dev\lightbox2-dev\dist\js\lightbox-plus-jquery.min.js"></script>
+    <script type="text/javascript" href="gallery.js"></script>
+</head>
+<body>
+     <!-- ..............................Navigation_bar.................................................................................................................    -->
+     <div class="logo">
+        <a><img src="logo.jpg" alt="logo" width="90px" height="80px" style="float:left"></a>
+    </div>
+    <nav class="navlist">
+        <a class="button" href="content_page.html">HOME</a>
+		<a class="button" href="query_form.html">COMMENTS</a>
+		<a class="button" href="buy_products.html">SHOP</a>
+		<a class="button" href="quiz.html">QUIZ</a>
+		<a class="button" href="diagram.html">SITEMAP</a>
+        <a class="button active" href="gallery.html">GALLERY</a>
+		<a class="button" href="student_details.html">ABOUT US</a>
+	</nav>
+
+     <!--........................Side_Navigation_bar..........................................................................................-->
+     <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></td>
+        <a href="content_page.html">HOME</a>
+        <a href="query_form.html">COMMENTS</a>
+        <a href="buy_products.html">SHOP</a>
+        <a href="quiz.html">QUIZ</a>
+        <a href="diagram.html">SITEMAP</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="student_details.html">ABOUT US</a>
+    </div>
+    <span class="Trigger" style="font-size:30px;cursor:pointer;float:right;margin-top:-65px; margin-right:18px; color:white;" onclick="openNav()">&#9776; </span>  
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+
+        <!----------------------------colour_scheme_selector-------------------------------------------------------------------------------------->
+   
+    <label for="color-scheme-select">Color Scheme:</label>
+<select id="color-scheme-select">
+  <option value="color-scheme-1">blue</option>
+  <option value="color-scheme-2">Black</option>
+  <option value="color-scheme-3">green</option>
+  <option value="random-color">Random Color</option>
+</select>
+
+<!-----------------------------------------font_colour_selector--------------------------------------------------------------------------------------->
+
+<label for="font-size-select">Font Size:</label>
+<select id="font-size-select">
+  <option value="small-text">Small</option>
+  <option value="medium-text">Medium</option>
+  <option value="large-text">Large</option>
+</select>
+
+<!-----------------------------------------Gallery------------------------------------------------------------------------------------------------------------>
+    <h1> Gallery</h1>
+    <div class="container">  
+    <div class ="gallery">
+    <a href="Gallery images\1 (2).png" data-lightbox="gallery1" data title="Galaxies are vast collections of stars, dust, gas, and other celestial bodies held together by gravity. They come in a variety of shapes and sizes, ranging from spiral galaxies like the Milky Way to irregular and elliptical galaxies. They are classified based on their morphology, or shape, as well as their spectral characteristics. Galaxies contain billions or even trillions of stars and are the building blocks of the universe. They play a crucial role in our understanding of cosmology and the evolution of the universe.">
+        <img src="Gallery images\1 (2).png"></a>
+    <a href="Gallery images\2 (2).png"data-lightbox="gallery1" data title="The solar system is the collection of planets, moons, asteroids, comets, and other celestial bodies that orbit around the sun. It consists of eight planets, including Earth, as well as dwarf planets like Pluto, and numerous smaller objects. The solar system formed about 4.6 billion years ago from a cloud of gas and dust. Studying the solar system allows us to understand the origin and evolution of our own planet and the universe as a whole.">
+        <img src="Gallery images\2 (2).png"></a> 
+    <a href="Gallery images\3.png"data-lightbox="gallery1" data title="A nebula is a cloud of gas and dust in space. These clouds can be enormous, spanning many light years in size. Nebulae are typically formed from the remnants of exploded stars or from the material that will eventually coalesce to form new stars. They come in a variety of shapes and sizes, including emission, reflection, and dark nebulae. Observing and studying nebulae allows astronomers to understand the formation and evolution of stars and galaxies.">
+        <img src="Gallery images\3.png"></a> 
+    <a href="Gallery images\4.png"data-lightbox="gallery1" data title="A wormhole is a hypothetical passage through space-time that could potentially allow for faster-than-light travel and communication. They are predicted by some theories of general relativity and could connect distant points in the universe. Wormholes are thought to be unstable and difficult to traverse, as they may collapse or lead to other dimensions. Although there is currently no observational evidence for the existence of wormholes, they are a popular topic in science fiction and continue to be studied by theoretical physicists.">
+        <img src="Gallery images\4.png"></a> 
+    <a href="Gallery images\5.jpg"data-lightbox="gallery1" data title="Astrobiology is a scientific field within the life and environmental sciences that studies the origins, early evolution, distribution, and future of life in the universe through investigating its deterministic conditions and contingent events.">
+        <img src="Gallery images\5.jpg"></a> 
+    <a href="Gallery images\6.png"data-lightbox="gallery1" data title="Spacecraft are vehicles designed to travel beyond Earth's atmosphere, exploring the mysteries of the universe. They are equipped with advanced technology, including propulsion systems, navigation systems, and scientific instruments. Spacecraft can be classified into various categories, such as satellites, probes, rovers, and crewed spacecraft. They have played a crucial role in our understanding of the solar system and the universe, helping us to explore and study planets, moons, asteroids, and comets. The development of spacecraft has also led to many technological advances on Earth.">
+        <img src="Gallery images\6.png"></a> 
+    <a href="Gallery images\7.jpg"data-lightbox="gallery1" data title="Astrobiology is studying how life might exist in the universe.">
+        <img src="Gallery images\7.jpg"></a> 
+    <a href="Gallery images\8 (2).png"data-lightbox="gallery1" data title="Galileo Galilei was a key figure in the Scientific Revolution, challenging long-held beliefs about the nature of the universe. He built and improved upon telescopes, enabling him to observe and document astronomical phenomena that contradicted the geocentric model of the solar system. His work also laid the foundation for modern physics, including the laws of motion and the concept of inertia. Despite facing persecution for his ideas, Galileo's impact on science and human knowledge is immeasurable.">
+        <img src="Gallery images\8 (2).png"></a> 
+    <a href="Gallery images\9.png"data-lightbox="gallery1" data title="A Mars rover is a motor vehicle designed to travel on the surface of Mars. Rovers have several advantages over stationary landers:">
+        <img src="Gallery images\9.png"></a> 
+    <a href="Gallery images\10.png"data-lightbox="gallery1" data title="Astrogeology is the study of the geological processes and features of celestial bodies, such as planets, moons, asteroids, and comets. This field combines principles of geology and planetary science to understand the formation, evolution, and geology of these objects. Astrogeologists use data from spacecraft missions, remote sensing techniques, and laboratory analyses to study the surfaces and interiors of these bodies. The insights gained from astrogeology have helped us understand the history and potential for habitability of our solar system and beyond.">
+        <img src="Gallery images\10.png"></a>
+    <a href="Gallery images\11 (2).jpg"data-lightbox="gallery1" data title="Astrometry is the science of positional astronomy, which measures the location of a celestial object and its movement within the plane of the sky. This was one of the first techniques used to search for planets around other stars.">
+        <img src="Gallery images\11 (2).jpg"></a>    
+    <a href="Gallery images\12.jpg"data-lightbox="gallery1" data title="A constellation is an area on the celestial sphere in which a group of visible stars forms a perceived pattern or outline, typically representing an animal, mythological subject, or inanimate object. The origins of the earliest constellations likely go back to prehistory.">
+        <img src="Gallery images\12.jpg"></a>
+    <a href="Gallery images\13.png"data-lightbox="gallery1" data title="Astrometry is the method that detects the motion of a star by making precise measurements of its position on the sky. This technique can also be used to identify planets around a star by measuring tiny changes in the star's position as it wobbles around the center of mass of the planetary system.">
+        <img src="Gallery images\13.png"></a>
+    <a href="Gallery images\14.png"data-lightbox="gallery1" data title="Neil Armstrong and Edwin Aldrin were the first of 12 human beings to walk on the Moon.">
+        <img src="Gallery images\14.png"></a>
+    <a href="Gallery images\15.png"data-lightbox="gallery1" data title=" constellation is a group of stars that appears to form a pattern or picture like Orion the Great Hunter, Leo the Lion, or Taurus the Bull. Constellations are easily recognizable patterns that help people orient themselves using the night sky.">
+        <img src="Gallery images\15.png"></a>
+    <a href="Gallery images\16.png"data-lightbox="gallery1" data title="Observing the night sky can be done with no special equipment, although a sky map can be very useful, and a good telescope or binoculars will enhance some experiences and bring some otherwise invisible objects into view.">
+        <img src="Gallery images\16.png"></a>
+
+    </div>
+    <hr>        
+    
+ <!-------------------------------- javaScript_for_colour_scheme_selector_&_font_size_selector---------------------------------------------------------------------------------->   
+<script>
+const colorSchemeSelect = document.getElementById('color-scheme-select');
+    const fontSizeSelect = document.getElementById('font-size-select');
+    const body = document.body;
+    
+    colorSchemeSelect.addEventListener('change', () => {
+      const colorScheme = colorSchemeSelect.value;
+      if (colorScheme === 'random-color') {
+        const randomColor = Math.floor(Math.random()*16777215).toString(16);
+        body.style.backgroundColor = '#' + randomColor;
+      } else {
+        body.className = colorScheme;
+      }
+    });
+    
+    fontSizeSelect.addEventListener('change', () => {
+      const fontSize = fontSizeSelect.value;
+      body.className = fontSize;
+    });
+    </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+            
+    
+</body>
+</html>

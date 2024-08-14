@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Astrometry</title>
+        <link rel="stylesheet" href="astrometry.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="navigation.css">
+    </head>
+    <body>
+        
+    <!-- ..........Navbar.................................................................................................................    -->
+    <div class="logo">
+        <a><img src="logo.jpg" alt="logo" width="90px" height="80px" style="float:left"></a>
+    </div>
+    <nav class="navlist">
+        <a class="button" href="content_page.html">HOME</a>
+		<a class="button" href="query_form.html">COMMENTS</a>
+		<a class="button" href="buy_products.html">SHOP</a>
+		<a class="button" href="quiz.html">QUIZ</a>
+		<a class="button" href="diagram.html">SITEMAP</a>
+        <a class="button" href="gallery.html">GALLERY</a>
+		<a class="button" href="student_details.html">ABOUT US</a>
+	</nav>
+
+ <!--........................side navebar..........................................................................................-->
+ <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></td>
+    <a href="content_page.html">HOME</a>
+    <a href="query_form.html">COMMENTS</a>
+    <a href="buy_products.html">SHOP</a>
+    <a href="quiz.html">QUIZ</a>
+    <a href="diagram.html">SITEMAP</a>
+    <a href="gallery.html">GALLERY</a>
+    <a href="student_details.html">ABOUT US</a>
+</div>
+<span class="Trigger" style="font-size:30px;cursor:pointer;float:right;margin-top:-65px; margin-right:18px; color:white;" onclick="openNav()">&#9776; </span>  
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+    <div class="container">
+        <header>
+
+        <h1>Astrometry </h1>
+
+        </header>
+
+        
+        <ul>
+           <li><a href= "#what_is_astrometry">What is Astrometry</a></li>
+           <li><a href= "#ancient_astrometry">Ancient Astrometry</a></li>
+            <li><a href= "#modern_astrometry">Modern Astrometry</a></li>
+            <li><a href= "#resources">Resources</a></li>
+            </ul>
+            <main>
+                <div class="container">
+                <section id="what_is_astrometry">
+                    <h2> What is Astrometry? </h2>
+                    <div class="image">
+                    <img src="indi1.jpg">
+                    </div>
+                    <div class="text">
+                    <p>Astrometry is a branch of astronomy that deals with the precise measurement of the positions and motions of celestial
+                         objects, such as stars, planets, and galaxies. It involves the use of telescopes and other instruments to make precise
+                          measurements of angles and distances. Astrometry plays a crucial role in determining the orbits of celestial objects,
+                           studying the structure and evolution of the Milky Way galaxy, searching for extrasolar planets, and studying the distribution
+                            of dark matter in the universe.</p>
+                            </div>
+                </section>
+                <section id="ancient_astrometry">
+                    <h2> Ancient Astrometry</h2>
+                    <div class="image"><img src="imageA.jpg">
+                    </div>
+                    <div class="text">
+                    <p>Ancient astrometry refers to the study of the positions and motions of celestial objects in ancient times, before the
+                       development of modern instruments and techniques. Ancient cultures, such as the Babylonians, Egyptians, Greeks, and Chinese, 
+                       made observations of the stars and planets, and developed systems of astronomy and astrology based on these observations. 
+                       They used techniques such as naked-eye observation, geometric calculations, and astronomical instruments such as sundials
+                        and astrolabes. Ancient astrometry played a crucial role in the development of early calendars, navigation, and religious beliefs.
+                         Today, we can still study and learn from the astrometry of ancient cultures and their contributions to the field of astronomy.
+                        </p>
+                        </div>
+                </section>
+                <section id ="modern_astrometry">
+                    <h2> Modern Astrometry</h2>
+                    <div class="image"><img src="image16.jpg">
+                    </div>
+                    <div class="text">
+                    <p>Modern astrometry is the study of the precise measurement of the positions and motions of celestial objects using advanced
+                         instruments and techniques. Modern astrometry includes the use of telescopes equipped with high-resolution cameras, 
+                         interferometers, and space-based observatories. This field of study plays a crucial role in determining the orbits of celestial 
+                         objects, searching for exoplanets, studying the structure and evolution of our Milky Way galaxy and other galaxies, and providing 
+                         data for astronomical navigation and timekeeping. Modern astrometry has also contributed significantly to our understanding of the
+                          universe's structure and evolution and provided insights into the distribution and nature of dark matter in the universe.
+                        </p>
+                        </div>
+                </section>
+                <section>
+                    <section id="resources">
+                        <h2>Resources</h2>
+                        <ul>
+                            <li><a href="https://nova.astrometry.net/">Astrometry.net </a></li>
+                            <li><a href="https://datalab.noirlab.edu/usno.php">USNO Astrometry</a></li>
+                            <li><a href="https://hst-docs.stsci.edu/acsdhb/chapter-5-acs-data-analysis/5-2-astrometry">Space Telescope Science Institute</a></li>
+                        </ul>
+                    </section>
+                </div>
+                
+</main>
+</div>
+
+<hr>        
+<footer>
+    <div class="footer" >
+
+        <button class="button" onclick="location = 'page_editor.html'" style="vertical-align:middle"><span>Page Editor </span></button>
+    </div>
+    <div class="arrow">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><a href="#" title="Back to Top"><span class="fas fa-angle-up"></span></a></button>
+        
+    </div>
+    <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+        } else {
+        mybutton.style.display = "none";
+        }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+<div class="footer-basic">
+
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="content_page.html">Home</a></li>
+                <li class="list-inline-item"><a href="query_form.html">Comments</a></li>
+                <li class="list-inline-item"><a href="buy_products.html">Shop</a></li>
+                <li class="list-inline-item"><a href="quiz.html">Quiz</a></li>
+                <li class="list-inline-item"><a href="diagram.html">Site Map</a></li>
+                <li class="list-inline-item"><a href="gallery.html">Gallery</a></li>
+				<li class="list-inline-item"><a href="student_details.html">About Us</a></li>
+				
+            </ul>
+            <p class="copyright">Astro Hub © 2023</p>
+</div>
+        </footer>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+            
+        
+   
