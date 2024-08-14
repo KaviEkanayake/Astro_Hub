@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Comments Form</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="web_design_cw.css">
+<style>
+
+.navlist{
+	margin-left:-20px;
+	padding-left:5px;
+
+}
+body{
+	background-repeat:no-repeat;
+	background-size:100% 25%;
+	background-color:white;
+	background-image: url('sky-blue-color-solid-background-1920x1080.png');
+
+}
+h1{
+	font-family: "Audiowide", sans-serif;
+	color:white;
+	margin-top:80px;
+	text-align: center;
+	font-size:80px;	
+	
+}
+.arrow{
+	margin-top:100px;
+}
+
+</style>
+</head>
+	
+<body>
+<div class="logo">
+<a><img src="66b0f212-b757-4828-ba90-18ed2dd5c8b0.jpg" alt="logo" width="90" height="90" style="float:left"></a>
+</div>
+<nav class="navlist">
+<a class="button" href="web_design_home_page_cw.html">HOME</a>
+<a  class="button active" href="web_design_comments.html">COMMENTS</a>
+<a class="button" href="#shp">SHOP</a>
+<a class="button" href="#qiz">QUIZ</a>
+<a class="button" href="#stm">SITEMAP</a>
+<a class="button" href="#abus">ABOUT US</a>
+</nav>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="web_design_home_page_cw.html">HOME</a>
+  <a href="web_design_comments.html">COMMENTS</a>
+  <a href="#">SHOP</a>
+  <a href="#">QUIZ</a>
+  <a href="#">SITEMAP</a>
+  <a href="#">ABOUT US</a>
+</div>
+<span style="font-size:30px;cursor:pointer;float:right;margin-top:-65px; margin-right:18px; color:white;" onclick="openNav()">&#9776; </span>
+<h1>WEBSITE FEEDBACK FORM</h1>
+<div class="arrow bounce"></div>
+<form action="mailto:sabeehasalman4@gmail.com" method="post" enctype="text/plain" onsubmit="myFunction()">
+<fieldset>
+<label for="fname">First name:</label>
+<input type="text" name="First name" id="fname" size="40" placeholder="Enter your first name" required> 
+</fieldset>
+<br>
+<br>
+<br>
+
+<fieldset>
+<label  for ="sname">Surname:</label>
+<input type="text" name="Surname" id="sname" size="40" placeholder="Enter your Surname" required>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<label for= "eaddress">Email Address:</label>
+<input  type="email" name="Email Address" id="eaddress" size="40"  placeholder="Enter your Email" required>
+</fieldset>
+<br>
+<br>
+<br>
+
+<fieldset>
+<div>
+<label>How satisfied with your website today? choose from 0 to 10,where 0 is extremely dissatisfied and 10 is extremely satisfied?</label>
+</div>
+<br>
+<br>
+<div class="y">
+<label for="r0">0</label>
+<label for="r1">1</label>
+<label for="r2">2</label>
+<label for="r3">3</label>
+<label for="r4">4</label>
+<label for="r5">5</label>
+<label for="r6">6</label>
+<label for="r7">7</label>
+<label for="r8">8</label>
+<label for="r9">9</label>
+<br>
+<br>
+
+</div>
+<div class="x">
+<input type="radio" name="rating" id="r0" value="0" required>
+<input type="radio" name="rating" id="r1" value="1" required>
+<input type="radio" name="rating" id="r2" value="2" required>
+<input type="radio" name="rating" id="r3" value="3" required>
+<input type="radio" name="rating" id="r4" value="4" required>
+<input type="radio" name="rating" id="r5" value="5" required>
+<input type="radio" name="rating" id="r6" value="6" required>
+<input type="radio" name="rating" id="r7" value="7" required>
+<input type="radio" name="rating" id="r8" value="8" required>
+<input type="radio" name="rating" id="r9" value="9" required>
+
+</div>
+</fieldset>
+<br>
+<br>
+<br>
+
+<fieldset>
+<div>
+<label>please could you tell us your reason for giving rating?</label>
+<br>
+<br>
+
+<textarea cols="113" rows="8" required>
+</textarea>
+</div>
+</fieldset>
+<br>
+<br>
+<br>
+
+<fieldset>
+<label>How did you want to complete this task tody?(optional)</label>
+<br>
+<br>
+<select name="task" id="completetask" required>
+<option value="">--Please select--</option>
+<option value="Phone">Phone</option>
+<option value="Website">Website</option>
+<option value="Webchat">Webchat</option>
+<option value="Social media">Social media</option>
+<option value="Email">Email</option>
+</select>
+</fieldset>
+<br>
+<br>
+<br>
+
+<fieldset>
+<label>If you had to complete this task again,how would you prefer to do it?(optional)</label>
+<br>
+<br>
+<select name="complete task again" id="taskagain" required>
+<option value="">--Please select--</option>
+<option value="Phone">Phone</option>
+<option value="Website">Website</option>
+<option value="Webchat">Webchat</option>
+<option value="Social media">Social media</option>
+<option value="Email">Email</option>
+</select>
+</fieldset>
+<br>
+<br>
+<br>
+<input class="sbut1" type="reset" value="Reset">
+<input class="sbut2" type="submit" value="Submit">
+</form>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<hr>
+<h5><a href="page_editor.html">Page editor link</a></h5>
+<div class="footer-basic">
+<footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="web_design_home_page_cw.html">Home</a></li>
+                <li class="list-inline-item"><a href="web_design_comments.html">Comments</a></li>
+                <li class="list-inline-item"><a href="#">Shop</a></li>
+                <li class="list-inline-item"><a href="#">Quiz</a></li>
+                <li class="list-inline-item"><a href="#">Site Map</a></li>
+				<li class="list-inline-item"><a href="#">About Us</a></li>
+			
+            </ul>
+            <p class="copyright">Astro Hub © 2023</p>
+        </footer>
+		</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+<script>
+function myFunction(){
+	alert("Thank You ! \n Thank you for taking the time to give us your feedback on your experience today"); 
+}
+</script>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>
+
