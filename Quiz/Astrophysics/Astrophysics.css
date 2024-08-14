@@ -1,0 +1,185 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins" , sans-serif;	
+}
+body{
+    overflow-x: hidden;    
+}
+.navlist{	
+	overflow: hidden;	
+}
+.navlist a{
+	font: 5px left;
+	color: white;
+	font-size: 19px;
+	display: inline-block;
+	padding: 26px 18px;
+	font-weight: 700;
+	margin-top: 0;
+	margin-left: 50px;
+    text-decoration: none;
+}
+.navlist a:hover{
+	background-color: #ddd;
+	color: black;
+}
+.active{
+	background-color: #cfa7b6;
+	color: white;
+}
+@media screen and (max-width:768px) {
+    .Trigger {
+        display: block;
+    }
+    .div.logo {
+        margin-left: 15px;
+    }
+    .navlist{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    
+    .navlist a{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #111;
+        background-position: center top;
+	}
+}
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+.sidenav a:hover {
+	color: #f1f1f1;
+}
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+}
+header h1{
+    font-size: 80px;
+    color: gold;
+    text-align: center;
+    font-style: italic;
+    margin-top: 12%;
+}
+header p{
+    font-size:30px ;
+    color: goldenrod;
+    text-align: center;
+    margin-top: 7%;
+}
+.introduction{
+    background-color:grey;
+    display: flex;
+    justify-content:left;
+    padding: 20px;
+    width: 70%;
+    margin-top: 10%;
+    margin-left: 3%;    
+}
+.introduction img{
+    height: 300px;
+}
+.introduction h2{
+    
+    color:maroon; 
+    margin:0;    
+}
+.introduction p{
+    color:black;
+    margin-right: 15px;
+}
+.research{
+    background-color:grey;
+    display: flex;
+    justify-content:left;
+    padding: 20px;
+    width: 70%;
+    margin-top: 10%;
+    margin-left: 3%;    
+}
+.research img{
+    height: 300px;
+}
+.research h2{ 
+    color:maroon; 
+    margin:0;    
+}
+.research p{
+    color:black;
+    margin-right: 15px;
+}
+.discoveries{
+    background-color:grey;
+    display:flex;
+    justify-content:left;
+    padding: 20px;
+    width: 70%;
+    margin-top: 10%;
+    margin-left: 3%;    
+}
+.discoveries img{
+    height: 300px;
+
+}
+.discoveries h2{ 
+    color:maroon; 
+    margin:0;    
+}
+.discoveries ul li p{
+    color:black;
+    margin-right: 15px;
+}
+.theories{
+    background-color:grey;
+    display:flex;
+    justify-content:left;
+    padding: 20px;
+    width: 70%;
+    margin-top: 10%;
+    margin-left: 3%;    
+}
+.theories img{
+    height: 300px;
+    display:inline;
+}
+.theories h2{ 
+    color:maroon; 
+    margin:0;    
+}
+.theories p{
+    color:black;
+    margin-right: 15px;
+}

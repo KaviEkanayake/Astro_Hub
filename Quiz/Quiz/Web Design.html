@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ASTRO HUB</title>
+        <link rel="stylesheet" type="text/css" href="WebDesign.css">
+    </head>
+    <body style="background-image:url('248415.jpg')">
+        <!--Horizonal Navigation bar-->
+        <div class="logo">
+        <img src="logoa.jpeg" width="90" height="90" alt=""/>
+        </div>
+            <nav class="navlist">
+                <a class="button" href="#">Home</a>
+                <a class="button active" href="#">COMMENTS</a>
+                <a class="button" href="#">SHOP</a>
+                <a class="button" href="#">QUIZ</a>
+                <a class="button" href="#">SITEMAP</a>
+                <a class="button" href="#">ABOUT US</a>
+            </nav>
+        <!--Side Navigation bar-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">COMMENTS</a>
+            <a href="#">SHOP</a>
+            <a href="#">QUIZ</a>
+            <a href="#">SITEMAP</a>
+            <a href="#">ABOUT US</a>
+        </div>
+        <span class="Trigger" style="font-size:30px;cursor:pointer;float:right;margin-top:-75px; margin-right:18px; color:white;" onclick="openNav()">&#9776; </span>
+        <img src="248415.jpg" alt=""/>
+        <!--start Quiz button-->
+        <div class= "start_btn"><button>Start Quiz</button></div>
+        <!--Info Box-->
+        <div class="info_box">
+            <div class="gif"><a><img src="solar-system-6.gif" width="600" height="400" alt=""/></a></div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+        </div>
+        <!--Quiz Box-->        
+        <div class="quiz_box">
+            <header>
+                <div class="total_que"></div>
+                <div class="timer">
+                    <div class="time_text">Time Left</div>
+                    <div class="timer_sec">6</div>
+                </div>
+                <div class="time_line"></div>
+            </header>
+            <section>
+                <div class="que_text"></div>
+                <div class="option_list"></div>
+            </section>
+            <footer>
+                <button class="next_btn">Next Question</button>
+            </footer>
+        </div>
+        <!--Result Box-->
+        <div class="result_box">
+            <div class="complete_text">Congratulation,Quiz Completed!</div>
+            <div class="score_text"></div>
+            <div class="buttons">
+                <button class="restart">Replay Quiz</button>
+                <button class="quit">Quit Quiz</button>
+            </div>
+        </div>
+            <script>
+            let questions = [
+            {
+                number: 1,
+                question: "Nearest star to the earth is :",
+                answer: "Sun",
+                options: [
+                    "Alfa Centaury",
+                    "Sun",
+                    "Proxima Centaury",
+                    "Dog Star",
+                ]
+            },
+            {
+                number: 2,
+                question: "Presently the farthest planet from the Sun is :",
+                answer: "Pluto",
+                options: [
+                    "Pluto",
+                    "Neptune",
+                    "Uranus",
+                    "Venus",
+                ]
+            },
+            {
+                number: 3,
+                question: "Planet with maximum satellites is :",
+                answer: "Saturn",
+                options: [
+                    "Earth",
+                    "Saturn",
+                    "Jupiter",
+                    "Pluto",
+                ]
+            },
+            {
+                number: 4,
+                question: "The existence of black holes was predicted by which eminent scientist's 'Theory of General Relativity' ?",
+                answer: "Albert Einstein",
+                options: [
+                    "Isaac Newton",
+                    "Albert Einstein",
+                    "Stephen Hawking",
+                    "Galileo Galilei",
+                ]
+            },
+            {
+                number: 5,
+                question: "Which planet is called 'Double Planet' ?",
+                answer: "Pluto",
+                options: [
+                    "Venus",
+                    "Uranus",
+                    "Pluto",
+                    "Earth",
+                ]
+            },
+            {
+                number: 6,
+                question: "Largest satellite in Solar System is :",
+                answer: "Ganymede",
+                options: [
+                    "Moon",
+                    "Ganymede",
+                    "Europa",
+                    "Cheron",
+                ]
+            },
+            {
+                number: 7,
+                question: "Who was the first man to classify stars according to their brightness.Was it :",
+                answer: "Hipparchus",
+                options: [
+                    "Aristarchus",
+                    "Pythagorus",
+                    "Copernicus",
+                    "Hipparchus",
+                ]
+            },
+            {
+                number: 8,
+                question: "For what reason was the Schmidt telescope specially built ? Was it to serve as :",
+                answer: "A sky camera",
+                options: [
+                    "A sky camera",
+                    "A radio telescope",
+                    "An optical telescope",
+                    "A solar telescope",
+                ]
+            },
+            {
+                number: 9,
+                question: "About how many light years across is the Milky Way ? Is it :",
+                answer: "100,000",
+                options: [
+                    "1,000",
+                    "10,000",
+                    "100,000",
+                    "1,000,000",
+                ]
+            },
+            {
+                number: 10,
+                question: "The andromede Galaxy is which of the following types of galaxies ?",
+                answer: "Spiral",
+                options: [
+                    "Elliptical",
+                    "Spiral",
+                    "Barred-spiral",
+                    "Irregular",
+                ]
+            }
+        ]
+            //selecting all required elements
+            const start_btn = document.querySelector(".start_btn button");
+            const info_box = document.querySelector(".info_box");
+            const exit_btn = info_box.querySelector(".buttons .quit");
+            const continue_btn = info_box.querySelector(".buttons .restart");
+            const quiz_box = document.querySelector(".quiz_box");
+            const result_box = document.querySelector(".result_box");
+            const option_list = document.querySelector(".option_list");
+            const time_line = document.querySelector("header .time_line");
+            const timeText = document.querySelector(".timer .time_left_txt");
+            const timeCount = document.querySelector(".timer .timer_sec");
+            // if startQuiz button clicked
+            start_btn.onclick = ()=>{
+                info_box.classList.add("activeInfo"); 
+            }
+            // if exitQuiz button clicked
+            exit_btn.onclick = ()=>{
+                info_box.classList.remove("activeInfo"); 
+            }
+            // if continueQuiz button clicked
+            continue_btn.onclick = ()=>{
+                quiz_box.classList.add("activeQuiz"); 
+                showQuetions(0); 
+                queCounter(1); 
+                startTimer(6); 
+                startTimerLine(0); 
+            }
+            let timeValue =  6;
+            let que_count = 0;
+            let que_numb = 1;
+            let userScore = 0;
+            let counter;
+            let counterLine;
+            let widthValue = 0;
+            const restart_quiz = result_box.querySelector(".buttons .restart");
+            const quit_quiz = result_box.querySelector(".buttons .quit");
+            // if restartQuiz button clicked
+            restart_quiz.onclick = ()=>{
+                quiz_box.classList.add("activeQuiz"); 
+                result_box.classList.remove("activeResult"); 
+                timeValue = 6; 
+                que_count = 0;
+                que_numb = 1;
+                userScore = 0;
+                widthValue = 0;
+                showQuetions(que_count); 
+                queCounter(que_numb); 
+                clearInterval(counter); 
+                clearInterval(counterLine); 
+                startTimer(timeValue); 
+                startTimerLine(widthValue); 
+                timeText.textContent = "Time Left"; 
+                next_btn.classList.remove("show"); 
+            }
+            // if quitQuiz button clicked
+            quit_quiz.onclick = ()=>{
+                window.location.reload(); 
+            }
+            const next_btn = document.querySelector("footer .next_btn");
+            const bottom_ques_counter = document.querySelector("header .total_que");
+            // if Next Que button clicked
+            next_btn.onclick = ()=>{
+                if(que_count < questions.length - 1){ 
+                    que_count++; 
+                    que_numb++; 
+                    showQuetions(que_count); 
+                    queCounter(que_numb); 
+                    clearInterval(counter); 
+                    clearInterval(counterLine); 
+                    startTimer(timeValue); 
+                    startTimerLine(widthValue); 
+                    timeText.textContent = "Time Left"; 
+                    next_btn.classList.remove("show"); 
+                }else{
+                    clearInterval(counter); 
+                    clearInterval(counterLine); 
+                    showResult(); 
+                }
+            }
+            // getting questions and options from array 
+            function showQuetions(index){
+                const que_text = document.querySelector(".que_text");
+                //creating a new span and div tag for question and option and passing the value using array index
+                let que_tag = '<span>'+ questions[index].number+". " + questions[index].question+ '</span>'; 
+                let option_tag = '<div class="option"><span>'+ questions[index].options[0] +'</span></div>'
+                + '<div class="option"><span>'+ questions[index].options[1] +'</span></div>'
+                + '<div class="option"><span>'+ questions[index].options[2] +'</span></div>'
+                + '<div class="option"><span>'+ questions[index].options[3] +'</span></div>';
+                que_text.innerHTML = que_tag; 
+                option_list.innerHTML = option_tag; 
+                const option = option_list.querySelectorAll(".option");
+                // set onclick attribute to all available options
+                for(i=0; i < option.length; i++){
+                    option[i].setAttribute("onclick", "optionSelected(this)");
+                }
+            }
+            //if user clicked on option
+            function optionSelected(answer){
+                clearInterval(counter); 
+                clearInterval(counterLine); 
+                let userAns = answer.textContent; 
+                let correcAns = questions[que_count].answer; 
+                const allOptions = option_list.children.length; 
+                if(userAns == correcAns){ 
+                userScore += 1; 
+                answer.classList.add("correct"); 
+                console.log("Correct Answer");
+                console.log("Your correct answers = " + userScore);
+            }else{
+                answer.classList.add("incorrect"); 
+                console.log("Wrong Answer");
+                for(i=0; i < allOptions; i++){
+                    if(option_list.children[i].textContent == correcAns){ 
+                        option_list.children[i].setAttribute("class", "option correct"); 
+                    }
+                }
+            }
+            for(i=0; i < allOptions; i++){
+                option_list.children[i].classList.add("disabled"); 
+            }
+            next_btn.classList.add("show"); 
+        }
+        function showResult(){
+            result_box.classList.add("activeResult"); 
+            const scoreText = result_box.querySelector(".score_text");
+            if (userScore > 7){ 
+                let scoreTag = '<span>You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p>. Excellent Mark,Keep up the good work.</span>';
+                scoreText.innerHTML = scoreTag;  
+            }
+            else if(userScore > 1){ 
+                let scoreTag = '<span>You got <p>'+ userScore +'</p> out of <p>'+ questions.length + '</p>. Nice Mark, But try again. </span>';
+                scoreText.innerHTML = scoreTag;
+            }
+            else{ 
+                let scoreTag = '<span>You got only <p>'+ userScore +'</p> out of <p>'+ questions.length  +'</p>. Bad Mark,Try again.</span>';
+                scoreText.innerHTML = scoreTag;
+            }
+        }     
+        function startTimer(time){
+            counter = setInterval(timer, 1000);
+            function timer(){
+                timeCount.textContent = time; 
+                time--; 
+                if(time < 9){ 
+                    let addZero = timeCount.textContent; 
+                    timeCount.textContent = "0" + addZero; 
+                }
+                if(time < 0){ 
+                    clearInterval(counter); 
+                    timeText.textContent = "Time Off"; 
+                    const allOptions = option_list.children.length; 
+                    let correcAns = questions[que_count].answer; 
+                    for(i=0; i < allOptions; i++){
+                        if(option_list.children[i].textContent == correcAns){ 
+                            option_list.children[i].setAttribute("class", "option correct"); 
+                            console.log("Time Off: Auto selected correct answer.");
+                        }
+                    }
+                    for(i=0; i < allOptions; i++){
+                        option_list.children[i].classList.add("disabled"); 
+                    }
+                    next_btn.classList.add("show"); 
+                }
+            }
+        }
+        function startTimerLine(time){
+            counterLine = setInterval(timer, 29);
+            function timer(){
+                time += 1; 
+                time_line.style.width = time + "px"; 
+                if(time > 549){ 
+                    clearInterval(counterLine); 
+                }
+            }
+        }
+        function queCounter(index){
+            let totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
+            bottom_ques_counter.innerHTML = totalQueCounTag;  
+        }
+        //Side Navigation bar
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+    </body>
+</html>
